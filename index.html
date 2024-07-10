@@ -7,39 +7,40 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main class="container">
-      <h1>
+    <main class="main-container">
+      <header>
         <img
           src="https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3784&q=80"
           alt="Ping Pong paddle laying on a table"
-          width="70%"
         /><br />
-        Ping Pong Score Keeper
-      </h1>
+        <h1>Ping Pong Score Keeper</h1>
+      </header>
 
       <div class="score-container">
-        <p>
-          <span class="score">0</span> to <span class="score">0</span>
+        <p class="score">
+          <span id="player1-score">0</span> to <span id="player2-score">0</span>
         </p>
         <p>Use the buttons below to keep score.</p>
-  
-        <label for="play-to">Playing To</label>
-        <select name="score" id="play-to">
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-        </select>
+        
+        <div class="play-to-container">
+          <label for="play-to">Playing To</label>
+          <select name="score" id="play-to">
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
       </div>
 
       <div class="button-container">
-        <button>+1 Player One</button>
-        <button>+1 Player Two</button>
-        <button>Reset</button>
+        <button class="buttons" id="player-one-btn">+1 Player One</button>
+        <button class="buttons" id="player-two-btn">+1 Player Two</button>
+        <button class="buttons" id="reset-btn">Reset</button>
       </div>
     </main>
     <script src="app.js"></script>
